@@ -56,11 +56,11 @@ int main(void) {
         do { // boucle qui va servir au déroulement de la partie
           Nettoyage();
           afficherGrille(g);
-          g = choix(g);
+          g = choix(g); //récupere le choix de cases à échanger de l'utilisateur
           coups++;
           combo=1;
           s.val=1;
-          do {
+          do { //boucle de suppression des cases qui forment une série de trois ou plus (horizontalement, verticalement et en diagonale)
             s=supprimer(g,s);
             g=caseSupprime(g,s,combo);
             g = Gravite(g);
@@ -73,13 +73,13 @@ int main(void) {
           }while (s.val==0);
 
           afficherGrille(g);
-          if(coupPossible(g)==0){
+          if(coupPossible(g)==0){ //la fonction coupPossible renvoie 0 si aucun coup n'est possible, si c'est le cas, la partie se termine
             next=5;
             HighScore(g);
             Continuer();
           }
           else {
-            next = tourSuivant();
+            next = tourSuivant(); //demande à l'utilisateur si il veut continuer la partie, l'arrêter, la sauvegarder
             if (next == 3 || next == 4) {
               g = save(g);
             }

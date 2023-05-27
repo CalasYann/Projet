@@ -75,7 +75,7 @@ void Parametre(){
     printf("   X \n");
     printf(" X\n");
     printf("\x1B[0m");
-    printf("  Pour réaliser des combinaisons vous allez devoir échanger des cases qui sont à coté en ligne, en colonne ou en diagonale comme ceci: \n");
+    printf("  Pour réaliser des combinaisons vous allez devoir échanger des cases qui sont à côté en ligne, en colonne ou en diagonale comme ceci: \n");
     printf("\x1B[0m");printf("\x1B[38;2;255;0;0m"); //ROUGE
     printf(" X X"); 
     printf("\x1B[38;2;0;255;255m"); //CYAN
@@ -85,6 +85,6 @@ void Parametre(){
     printf(" X \n");
     printf("\x1B[0m");
     printf("  Le W et le X\n");
-    printf("  Pour maximiser vos Spikes, Réalisez des combinaisons plus longues avec des réactions et des combos. \n Si malheureseument, plus aucun coup n'est posssible dans votre grille, la partie est finie et votre score est sauvegardée si c'est le HighScore.\n");
+    printf("  Pour maximiser vos Spikes, Réalisez des combinaisons plus longues avec des réactions en chaines et des combos. \n Si malheureseument, plus aucun coup n'est posssible dans votre grille, la partie est finie et votre score est sauvegardé si c'est le Highscore.\n");
   Continuer();
 }

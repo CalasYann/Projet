@@ -41,9 +41,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
             }
             if((*(*(g.tab+i)+j)==*(*(g.tab+i)+j-1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i)+j-2))){//verifie si 3 symboles sont alignés en ligne vers la gauche"
               val=0;
-              c1=i*10+j;
-              c2=i*10+j-1;
-              c3=i*10+j-2;
+              c1=i*100+j;
+              c2=i*100+j-1;
+              c3=i*100+j-2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -54,9 +54,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
           }else if(j==1 ||j==0){
             if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j))){//verifie si 3 symboles sont alignés en colonne vers le haut"
               val=0;
-              c1=(i*10)+j;
-              c2=((i-1)*10)+j;
-              c3=((i-2)*10)+j;
+              c1=(i*100)+j;
+              c2=((i-1)*100)+j;
+              c3=((i-2)*100)+j;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -66,9 +66,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
             }
             else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j+1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j+2))){//verifie si 3 symboles sont alignés en diagonale vers le haut droit"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j+1;
-              c3=(i-2)*10+j+2;
+              c1=i*100+j;
+              c2=(i-1)*100+j+1;
+              c3=(i-2)*100+j+2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -79,9 +79,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
           }else if(j==g.col-1 ||j==g.col-2){
             if((*(*(g.tab+i)+j)==*(*(g.tab+i)+j-1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i)+j-2))){//verifie si 3 symboles sont alignés en ligne vers la gauche"
               val=0;
-              c1=i*10+j;
-              c2=i*10+j-1;
-              c3=i*10+j-2;
+              c1=i*100+j;
+              c2=i*100+j-1;
+              c3=i*100+j-2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -90,9 +90,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
               com++;
             }else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j))){//verifie si 3 symboles sont alignés en colonne vers le haut"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j;
-              c3=(i-2)*10+j;
+              c1=i*100+j;
+              c2=(i-1)*100+j;
+              c3=(i-2)*100+j;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -101,9 +101,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
               com++;
             }else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j-1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j-2))){//verifie si 3 symboles sont alignés en diagonale vers le haut gauche"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j-1;
-              c3=(i-2)*10+j-2;
+              c1=i*100+j;
+              c2=(i-1)*100+j-1;
+              c3=(i-2)*100+j-2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -114,9 +114,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
           }else{
             if((*(*(g.tab+i)+j)==*(*(g.tab+i)+j-1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i)+j-2))){ //verifie si 3 symboles sont alignés en ligne vers la gauche"
               val=0;
-              c1=i*10+j;
-              c2=i*10+j-1;
-              c3=i*10+j-2;
+              c1=i*100+j;
+              c2=i*100+j-1;
+              c3=i*100+j-2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -125,9 +125,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
               com++;
             }else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j))){//verifie si 3 symboles sont alignés en colonne vers le haut"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j;
-              c3=(i-2)*10+j;
+              c1=i*100+j;
+              c2=(i-1)*100+j;
+              c3=(i-2)*100+j;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -136,9 +136,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
               com++;
             }else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j-1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j-2))){//verifie si 3 symboles sont alignés en diagonale vers le haut gauche"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j-1;
-              c3=(i-2)*10+j-2;
+              c1=i*100+j;
+              c2=(i-1)*100+j-1;
+              c3=(i-2)*100+j-2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -147,9 +147,9 @@ sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du m�
               com++;
             }else if((*(*(g.tab+i)+j)==*(*(g.tab+i-1)+j+1))&&(*(*(g.tab+i)+j)==*(*(g.tab+i-2)+j+2))){//verifie si 3 symboles sont alignés en diagonale vers le haut droit"
               val=0;
-              c1=i*10+j;
-              c2=(i-1)*10+j+1;
-              c3=(i-2)*10+j+2;
+              c1=i*100+j;
+              c2=(i-1)*100+j+1;
+              c3=(i-2)*100+j+2;
               s.tab[com]=c1;
               com++;
               c2=s.tab[com]=c2;
@@ -170,8 +170,8 @@ Game caseSupprime(Game g, sup s, int combo){ //supprime toutes les cases contenu
   int i,j;
   for(w=0;w<TAILLE;w++){
     if(s.tab[w]>=0){
-      j=s.tab[w]%10;
-      i=(s.tab[w]-j)/10;
+      j=s.tab[w]%100;
+      i=(s.tab[w]-j)/100;
       if(*(*(g.tab+i)+j)!=7){
         *(*(g.tab+i)+j)=7;
         g.score=g.score+(50*combo);

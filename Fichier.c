@@ -1,6 +1,6 @@
 #include "Fichier.h"
 
-Game save(Game g){
+Game save(Game g){ //sauvegarde la partie en cours dans un fichier .txt et la renvoie
 
   FILE *f=NULL;
   int i,j;
@@ -27,7 +27,7 @@ Game save(Game g){
   return g;
 }
 
-Game openSave(Game g){
+Game openSave(Game g){ // ouvre le fichier de sauvegarde et renvoie la partie enregistrée dedans (structure Game)
   FILE*f=NULL;
   int ret1, ret2, ret3, ret4, ret5;
   int i,j;
@@ -68,7 +68,7 @@ Game openSave(Game g){
 }
 
 
-void HighScore(Game g){
+void HighScore(Game g){ //sauvegarde du score du joueur dans la sauvegarde si le score  est plus grand que le highscore
   FILE* f=NULL;
   int highscore;
   int ret;

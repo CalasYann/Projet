@@ -1,6 +1,6 @@
 #include "Utile.h"
 
-void Poubelle(){ //permet de vidé l'appuie touche après un scanf
+void Poubelle(){ //permet de vider l'appuie touche après un scanf
   int ret=0;
   char c='0';
   while(c!='\n'|| ret!=1){
@@ -8,7 +8,7 @@ void Poubelle(){ //permet de vidé l'appuie touche après un scanf
   }
 }
 
-void Continuer(){
+void Continuer(){ //permet de mettre le programme en pause en attendant que le joueur veuille continuer (en appuyany sur 1)
   int a=0;
   int ret;
   do{
@@ -19,7 +19,7 @@ void Continuer(){
 }
 
 
-int tourSuivant(){
+int tourSuivant(){ // affiche les options possibles à la fin de chaque tour et demande à l'utilisateur laquelle il souhaite faire (renvoie un int entre 1 et 5
   int choix=0;
   int ret;
   do{

@@ -24,7 +24,7 @@ int Menu(int choix){ // Menu de notre jeu
     printf("\x1B[4m");
     printf("CY PROUVANCE™️ :\n");
     printf("\x1B[0m");
-    printf("         Que voulez vous faire ?\n");
+    printf("         Que voulez-vous faire ?\n");
     printf("           \x1B[38;2;230;213;150m1) Nouvelle Partie\x1B[0m\n");
     printf("     \x1B[38;2;115;200;140m2) Reprendre une Partie Commencée\x1B[0m\n");
     printf("            \x1B[38;2;123;129;209m3) Règles du Jeu\x1B[0m\n");

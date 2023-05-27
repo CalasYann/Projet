@@ -8,19 +8,19 @@ Game caracGrille(Game g){
   g.score=0;
   do{  
     do{
-      printf("Avec combien de symboles voulez vous jouer(Ce nombre doit être entre 4 et 6 compris) ?\n");
+      printf("Avec combien de symboles voulez-vous jouer(Ce nombre doit être entre 4 et 6 compris) ?\n");
       ret=scanf("%d",&g.symb);
       Poubelle();
     }while((g.symb<4 || g.symb>6) || ret!=1);
   
     do{
-      printf("Avec combien de lignes voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
+      printf("Avec combien de lignes voulez-vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
       ret=scanf("%d",&g.lig);
       Poubelle();
     }while((g.lig<7 || g.lig>20) || ret!=1);
   
     do{
-      printf("Avec combien de colonnes voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
+      printf("Avec combien de colonnes voulez-vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
       ret=scanf("%d",&g.col);
       Poubelle();
     }while((g.col<7 || g.col>20) || ret!=1);

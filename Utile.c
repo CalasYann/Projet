@@ -23,10 +23,10 @@ int tourSuivant(){ // affiche les options possibles à la fin de chaque tour et 
   int choix=0;
   int ret;
   do{
-    printf("\nTaper 1 pour continuer la partie\n Taper 2 pour sauvegarder\n Taper 3 pour Sauvegarder et continuer\n Taper 4 pour Sauvegarder et Quitter\n Taper 5 pour quitter sans Sauvegarder.\n");
+    printf("\nTaper 1 pour continuer la partie\n Taper 2 pour Sauvegarder et continuer\n Taper 3 pour Sauvegarder et Quitter\n Taper 4 pour quitter sans Sauvegarder.\n");
     ret=scanf("%d",&choix);
     Poubelle();
-  }while((choix!=2 && choix!=1&& choix!=3&& choix!=4&& choix!=5)||ret!=1);
+  }while((choix!=2 && choix!=1&& choix!=3&& choix!=4)||ret!=1);
   return choix;
 }
 

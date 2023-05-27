@@ -19,7 +19,7 @@ Game Gravite(Game g) { //produit l'effet de gravité vers le haut sur les cases 
 }
 
 
-sup supprimer(Game g, sup s){
+sup supprimer(Game g, sup s){ //détecte les séries de 3 ou plus de cases du même type et les ajoute à s.tab sous forme d'un int
   int i;
   int j;
   int val=1;
@@ -165,7 +165,7 @@ sup supprimer(Game g, sup s){
   return s;
 }
 
-Game caseSupprime(Game g, sup s, int combo){
+Game caseSupprime(Game g, sup s, int combo){ //supprime toutes les cases contenues dans s (qui font donc partie d'une serie de 3 ou +) et calcule le combo
   int w;
   int i,j;
   for(w=0;w<TAILLE;w++){

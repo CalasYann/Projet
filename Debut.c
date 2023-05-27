@@ -14,18 +14,18 @@ Game caracGrille(Game g){
     }while((g.symb<4 || g.symb>6) || ret!=1);
   
     do{
-      printf("Avec combien de ligne voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
+      printf("Avec combien de lignes voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
       ret=scanf("%d",&g.lig);
       Poubelle();
     }while((g.lig<7 || g.lig>20) || ret!=1);
   
     do{
-      printf("Avec combien de colonne voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
+      printf("Avec combien de colonnes voulez vous jouer(Ce nombre doit être entre 7 et 20) ?\n");
       ret=scanf("%d",&g.col);
       Poubelle();
     }while((g.col<7 || g.col>20) || ret!=1);
     do{
-      printf("Vous allez commencé une partie avec une grille %dx%d et %d symboles. Tapez 1 pour commencer et 2 pour changer les paraètres.\n",g.lig,g.col,g.symb);
+      printf("Vous allez commencé une partie avec une grille %dx%d et %d symboles. Taper 1 pour commencer et 2 pour changer les paramètres.\n",g.lig,g.col,g.symb);
       ret=scanf("%d",&val);
       Poubelle();
     }while((val!=1&&val!=2) || ret!=1);

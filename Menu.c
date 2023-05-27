@@ -15,7 +15,7 @@ int Menu(int choix){ // Menu de notre jeu
 
 
   
-    printf("\x1B[38;2;229;123;190m");
+    printf("\x1B[38;2;229;123;190m"); //affichage du menu de départ du jeu
     printf("              \x1B[4m");
     printf("CY PROUVANCE™️\n");
     printf("\x1B[0m");
@@ -30,7 +30,7 @@ int Menu(int choix){ // Menu de notre jeu
     printf("            \x1B[38;2;123;129;209m3) Règles du Jeu\x1B[0m\n");
     printf("            \x1B[38;2;158;115;189m4) Quitter le Jeu\x1B[0m\n");
     
-    f=fopen("Sauvegarde/Highscore.txt","r");
+    f=fopen("Sauvegarde/Highscore.txt","r"); //ouverture du fichier de sauvegarde des highscores
     if(f==NULL){
       printf("Echec de l'ouverture du fichier.\n");
       printf("Code d'erreur : %d\n",errno);

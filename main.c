@@ -80,12 +80,11 @@ int main(void) {
           }
           else {
             next = tourSuivant(); //demande à l'utilisateur si il veut continuer la partie, l'arrêter, la sauvegarder
-            if (next == 3 || next == 4) {
+            if (next == 2 || next == 3) {
               g = save(g);
             }
           }
-        } while (next != 4 &&
-                 next != 5); // mettre dans le while les conditions d'arrêt du
+        } while (next != 3 && next != 4); // mettre dans le while les conditions d'arrêt du
                              // jeu et de retour au menu principal.
       }
     }

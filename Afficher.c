@@ -1,13 +1,13 @@
 #include "Afficher.h"
 
-void afficherGrille(Game g){
+void afficherGrille(Game g){//Afficher la grille donner
   printf("\x1B[1;1H"); //mettre le curseur en haut a droite
   printf("\x1B[0J"); //Effecer ce qui se trouve sous le curseur
   int i,j;
   int temp;
   char c='A';
   printf("     ");
-  for(i=0;i<g.col;i++){ // créer l'affichage de la grille
+  for(i=0;i<g.col;i++){ // Placer les lettres en haut dela grille
   printf("%c ",c+i);
   }
   printf("\n");
@@ -18,11 +18,11 @@ void afficherGrille(Game g){
   printf("\n");
   
   for (i=0;i<g.lig;i++){
-    printf("%2d | ",i+1);
+    printf("%2d | ",i+1);//mettre les numéros sur le côté de la grille
     for(j=0;j<g.col; j++){
       temp=g.tab[i][j];
       
-      switch (temp) { //Remplace les numéros de la grille par les lettres qui leur correspond
+      switch (temp) { //afficher les symboles en couleur
         case 0 :
           printf("\x1B[38;2;255;0;0m"); //ROUGE
           printf("X ");
@@ -67,11 +67,11 @@ void afficherGrille(Game g){
     }
     printf("\n");
   }
-  printf("\n Votre Score: %d Spikes\n",g.score);
+  printf("\n Votre Score: %d Spikes\n",g.score); //Afficher le score du joueur
 }
 
 
-void Nettoyage(){
+void Nettoyage(){ //Nettoyer l'écran
   printf("\x1B[1;1H"); //mettre le curseur en haut a droite
   printf("\x1B[0J"); //Effecer ce qui se trouve sous le curseur
 }

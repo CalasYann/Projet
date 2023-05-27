@@ -1,7 +1,7 @@
 #include "Jeu.h"
 
 
-Game Gravite(Game g) {
+Game Gravite(Game g) { //produit l'effet de gravité vers le haut sur les cases de la grille (renvoie la structure Game de la partie)
   int i, j,w;
   int temp=0;
   for(w=0;w<g.col;w++){

@@ -65,7 +65,7 @@ int main(void) {
             g=caseSupprime(g,s,combo);
             g = Gravite(g);
             afficherGrille(g);
-            if(combo>1){
+            if(combo>1&&s.val==0){
               printf("\nCombo x%d\n",combo);
             }
             Attendre();

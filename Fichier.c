@@ -5,7 +5,7 @@ Game save(Game g){
   FILE *f=NULL;
   int i,j;
 
-  f=fopen("Sauvegarde/save.txt","w");
+  f=fopen("save.txt","w");
   if(f==NULL){
     printf("Echec de l'ouverture du fichier.\n");
     printf("Code d'erreur : %d\n",errno);
@@ -31,7 +31,7 @@ Game openSave(Game g){
   FILE*f=NULL;
   int ret1, ret2, ret3, ret4, ret5;
   int i,j;
-  f=fopen("Sauvegarde/save.txt","r");
+  f=fopen("save.txt","r");
   if(f==NULL){
     printf("Echec de l'ouverture du fichier.\n");
     if(errno==2){
@@ -73,7 +73,7 @@ void HighScore(Game g){
   int highscore;
   int ret;
   
-  f=fopen("Sauvegarde/Highscore.txt","r");
+  f=fopen("Highscore.txt","r");
   if(f==NULL){
     printf("Echec de l'ouverture du fichier.\n");
     printf("Code d'erreur : %d\n",errno);
@@ -86,7 +86,7 @@ void HighScore(Game g){
   else if(highscore<g.score){
     printf(" Vous avez battu le Records! Le nouveau highsocre est %d\n",g.score);
     fclose(f);
-    f=fopen("Sauvegarde/Highscore.txt","w");
+    f=fopen("Highscore.txt","w");
     if(f==NULL){
     printf("Echec de l'ouverture du fichier.\n");
     printf("Code d'erreur : %d\n",errno);
